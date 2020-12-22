@@ -18,4 +18,4 @@ Ejercicio donde se crea una máquina recreativa, los premios son los siguientes:
 
 Cualquier navegador actual basado en chromiun, Mozilla firefox etc.
 
-### [Ejecutar el juego]("https://raw.githack.com/hongkfui/DWEC-2020/main/index.html")
+### [Ejecutar el juego](https://raw.githack.com/hongkfui/DWEC-2020/main/index.html)
