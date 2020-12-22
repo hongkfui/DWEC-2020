@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio DWEC 2020</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="img/icono-html5.svg"
+      sizes="16x16"
+    />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <!-- textos del estado de la partida -->
+      <div id="texto" class="titulo"></div>
+      <!-- contenedor de las imágenes de las jugadas -->
+      <div class="ventana">
+        <div id="imgIzq" class="imagen"></div>
+        <div id="imgCentro" class="imagen"></div>
+        <div id="imgDer" class="imagen"></div>
+      </div>
+      <!-- contenedor botones -->
+      <div class="botonera">
+        <button
+          id="btnInsertar"
+          class="btn btn-insertar"
+          onclick="insertarMoneda()"
+        >
+          INSERTAR
+        </button>
+        <button id="btnJugar" class="btn btn-jugar" onclick="jugar()" disabled>
+          JUGAR
+        </button>
+        <button
+          id="btnFinalizar"
+          class="btn btn-finalizar"
+          onclick="finalizarJuego()"
+          disabled
+        >
+          FINALIZAR
+        </button>
+      </div>
+      <!-- tabla del historial de la partida actual -->
+      <div id="historial" class="historial scrollbar">
+        <table class="tb-estat">
+          <thead>
+            <tr>
+              <th width="100">TIRADA</th>
+              <th>JUGADA</th>
+              <th width="120">GANANCIAS</th>
+              <th width="120">PERDIDAS</th>
+              <th width="120">MONEDAS</th>
+            </tr>
+          </thead>
+          <tbody id="tb-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
